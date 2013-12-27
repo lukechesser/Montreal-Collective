@@ -1,0 +1,40 @@
+// ==========================================================================
+// *
+// * Main.less
+// *
+// * Import dependencies and compile to /css/main.css
+// *
+// ==========================================================================
+
+// ==========================================================================
+// * Variables
+// ==========================================================================
+
+// grid
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+
+// breakpoints
+@screen-xs-min:              480px;
+@screen-xs-max:              (@screen-sm-min - 1);
+
+@screen-sm-min:              768px;
+@screen-sm-max:              (@screen-md-min - 1);
+
+@screen-md-min:              992px;
+
+// containers
+@container-tablet:             ((720px + @grid-gutter-width));
+@container-sm:                 @container-tablet;
+
+@container-desktop:            ((940px + @grid-gutter-width));
+@container-md:                 @container-desktop;
+
+
+// ==========================================================================
+// * Dependencies
+// ==========================================================================
+
+@import "mixins.less";
+@import "normalize.less";
+@import "grid.less";
