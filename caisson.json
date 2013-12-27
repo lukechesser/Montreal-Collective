@@ -1,0 +1,26 @@
+{
+  "root_domain": "montrealcollective.com",
+  "redirect_domain": "www.montrealcollective.com",
+  "s3": [
+    {
+      "bucket": "montrealcollective.com",
+      "endpoint": "montrealcollective.com.s3-website-us-east-1.amazonaws.com"
+    },
+    {
+      "bucket": "www.montrealcollective.com",
+      "endpoint": "www.montrealcollective.com.s3-website-us-east-1.amazonaws.com"
+    }
+  ],
+  "route_53": {
+    "domain_name": "montrealcollective.com.",
+    "name_servers": [
+      "ns-592.awsdns-10.net",
+      "ns-435.awsdns-54.com",
+      "ns-1880.awsdns-43.co.uk",
+      "ns-1217.awsdns-24.org"
+    ]
+  },
+  "cloud_front": {
+    "domain_name": "d8stueqs5if2z.cloudfront.net"
+  }
+}
