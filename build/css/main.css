@@ -1657,6 +1657,7 @@ h6 {
   height: 200px;
   padding: 20px;
   background-color: #a6a6a6;
+  overflow-y: hidden;
 }
 
 .banner__heading {

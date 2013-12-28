@@ -3,6 +3,7 @@ description: A collection of Montreal's best tech companies, startups, investors
 keywords: montreal, startups, companies, events, tech, investors
 
 exclude: [_less, _img, _css, _js, _icons, node_modules, aws-config.json, caisson.json, package.json, README.md, GruntFile.js]
+safe: false
 source: .
 destination: ./build
 

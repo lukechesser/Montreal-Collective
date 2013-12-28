@@ -1,18 +1,39 @@
 - name: ooomf
   category: startup
   url: www.ooomf.com
-  description: An online marketplace. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.
+  description: Make your dream website, mobile app, or logo by connecting with a worldwide community of handpicked developers and designers.
   twitter: ooomf
   facebook: ooomf
 
 - name: Shopify
   category: company
   url: www.shopify.ca
-  description: Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam vestibulum id ac justo odio cras sit fementum.
+  description: Shopify is a powerful ecommerce website platform that allows you to sell online by providing everything you need to create an online store.
   twitter: shopify
+  facebook: shopify
 
 - name: Real Ventures
   category: investor
   url: www.realventures.com
-  description: Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam vestibulum id ac justo odio cras sit fementum.
+  description: Real Ventures is Canada’s largest and most active seed venture fund investing in web, mobile, Saas and gaming. They work with inspiring entrepreneurs who exhibit unique insight and appreciation of their target market and industry.
   twitter: realventures
+
+- name: Ubisoft
+  category: company
+  url: www.ubisoft.com
+  description: Ubisoft is a multinational video game developer and publisher. It is the world's third largest independent game publisher with development studios around the world and in Montreal.
+  twitter: ubisoft
+  facebook: ubisoftmontreal
+
+- name: C2MTL
+  category: event
+  url: www.c2mtl.com
+  description: C2MTL is an immersive three-day event with world-renowned speakers, interactive exhibits, collaborative workshops and a creativity Boot Camp.
+  twitter: C2MTL
+  facebook: C2MTL
+
+- name: Dribbble Meetup
+  category: event
+  url: www.meetup.com/dribbble/Montreal-CA/
+  description: An informal event for designers, developers, and creatives hosted by @kevinclark of Shopify, held monthly in downtown Montreal/Plateau.
+  twitter: kevinclark
