@@ -10,6 +10,7 @@
 // * # JS Hint
 // * # ImageMin
 // * # Webfonts
+// * # Jekyll
 // * # Watch
 // *
 // ==========================================================================
@@ -38,7 +39,7 @@ path = {
     },
     webfonts: {
       src: root + '_icons/',
-      dist: root + 'webfonts/',
+      compiled: root + 'webfonts/',
     },
   }
 };
@@ -160,7 +161,7 @@ module.exports = function(grunt) {
     webfont: {
       main: {
         src: path.main.webfonts.src + '*.svg',
-        dest: path.main.webfonts.dest,
+        dest: path.main.webfonts.compiled,
         destCss: path.main.css.src,
         options: {
           syntax: 'bem',
@@ -178,6 +179,23 @@ module.exports = function(grunt) {
     },
 
     // ==========================================================================
+    // * Shell
+    // https://github.com/sindresorhus/grunt-shell
+    // ==========================================================================
+
+    shell: {
+      options: {
+          stdout: true
+      },
+      build: {
+        command: 'jekyll build',
+      },
+      serve: {
+        command: 'jekyll serve'
+      }
+    },
+
+    // ==========================================================================
     // * Watch
     // * https://github.com/gruntjs/grunt-contrib-watch
     // ==========================================================================
@@ -192,6 +210,11 @@ module.exports = function(grunt) {
         files: [ path.main.js.src + '**/*.js'],
         tasks: ['compile-js'],
       },
+
+      site: {
+        files: [ root + '_data/**/*', root + '_includes/**/*', root + '*'],
+        tasks: ['compile-site'],
+      },
     },
   });
 
@@ -205,6 +228,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-webfont');
+  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // tasks
@@ -213,13 +237,16 @@ module.exports = function(grunt) {
   grunt.registerTask('compile-css', ['less', 'autoprefixer', 'cssmin']);
   grunt.registerTask('compile-images', ['imagemin']);
   grunt.registerTask('compile-fonts', ['webfont']);
+  grunt.registerTask('compile-site', ['shell:build']);
 
   // task aliases/sugar
-  grunt.registerTask('compile', ['compile-js', 'compile-css', 'compile-images']);
+  grunt.registerTask('compile', ['compile-fonts', 'compile-js', 'compile-css', 'compile-images', 'compile-site']);
   grunt.registerTask('deploy', ['compile']);
   grunt.registerTask('default', ['compile']);
 
-  // watch tasks (sugar)
+  // watch tasks
+  grunt.registerTask('watch', ['watch']);
   grunt.registerTask('watch-js', ['watch:js']);
   grunt.registerTask('watch-less', ['watch:less']);
+  grunt.registerTask('watch-site', ['watch:site']);
 };

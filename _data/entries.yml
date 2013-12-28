@@ -1,0 +1,13 @@
+- name: ooomf
+  category: startup
+  url: https://ooomf.com
+  description: An online marketplace.
+  twitter: ooomf
+  facebook: ooomf
+
+- name: Shopify
+  category: company
+  url: https://shopify.ca
+  description: Start your online store.
+  twitter: shopify
+  facebook: shopify

@@ -1,0 +1,9 @@
+name: Montreal Collective
+description: A collection of Montreal's best tech companies, startups, investors, and events
+keywords: montreal, startups, companies, events, tech, investors
+
+exclude: [_less, _img, _css, _js, _icons, node_modules, aws-config.json, caisson.json, package.json, README.md, GruntFile.js]
+source: .
+destination: ./build
+
+port: 3000
