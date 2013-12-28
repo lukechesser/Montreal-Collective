@@ -100,7 +100,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       main: {
-        src: [],
+        src: [ path.main.js.src + '**/*.js' ],
         dest: path.main.js.compiled + 'main.js'
       },
     },
@@ -124,14 +124,6 @@ module.exports = function(grunt) {
 
     jshint: {
       files: ['gruntfile.js', path.main.js.src + '*.js'],
-      options: {
-        globals: {
-          jQuery: true,
-          console: true,
-          module: true,
-          document: true
-        }
-      }
     },
 
     // ==========================================================================

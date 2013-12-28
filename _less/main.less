@@ -15,26 +15,60 @@
 @grid-gutter-width:         30px;
 
 // breakpoints
-@screen-xs-min:              480px;
+@screen-xs-min:              320px;
 @screen-xs-max:              (@screen-sm-min - 1);
 
-@screen-sm-min:              768px;
+@screen-sm-min:              480px;
 @screen-sm-max:              (@screen-md-min - 1);
 
-@screen-md-min:              992px;
+@screen-md-min:              768px;
 
 // containers
-@container-tablet:             ((720px + @grid-gutter-width));
-@container-sm:                 @container-tablet;
+@container-sm:                 400px;
+@container-md:                 640px;
 
-@container-desktop:            ((940px + @grid-gutter-width));
-@container-md:                 @container-desktop;
+// ==========================================================================
+// * Colors
+// ==========================================================================
 
+@white: #fff;
+@white-dark: #e6e6e6;
+
+@gray: #a6a6a6;
+@gray-dark: #888;
+
+@black-light: #444;
+@black: #222;
+@black-dark: #111;
+
+@orange: #df7647;
+@orange-dark: darken(@orange, 10%);
+
+// ==========================================================================
+// * Fonts
+// ==========================================================================
+
+@font-serif: "ff-tisa-web-pro", "Tisa Pro", Georgia, serif;
+@font-sans-serif: "ff-tisa-sans-web-pro", "Tisa Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+@font-size-base: 14px;
+@font-weight-base: 400;
+@line-height-base: 1.71; // 22px
 
 // ==========================================================================
 // * Dependencies
 // ==========================================================================
 
 @import "mixins.less";
+@import "utilities.less";
 @import "normalize.less";
+
 @import "grid.less";
+@import "scaffolding.less";
+@import "type.less";
+
+@import "banners.less";
+@import "tabs.less";
+@import "entries.less";
+@import "footer.less";
+
+@import "main-iconfont.less";

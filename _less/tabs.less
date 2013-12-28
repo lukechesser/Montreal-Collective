@@ -1,0 +1,64 @@
+// ==========================================================================
+// *
+// * Tabs
+// * collapsable tabs for choosing categories
+// *
+// ==========================================================================
+
+.tabs {
+  .clearfix();
+  margin: 0;
+  margin-top: 48px;
+  padding: 8px 0;
+  list-style: none;
+  border-bottom: 2px solid @white-dark;
+
+  & > li {
+  	float: left;
+  	margin-top: 0;
+    font-family: @font-sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  & > li > a {
+  	color: @gray-dark;
+  	padding-right: 8px;
+  	margin-right: 16px;
+  	line-height: 14px;
+
+  	&:hover {
+  	  color: @black;
+  	  text-decoration: none !important;
+  	}
+  }
+
+  & > .active > a,
+  & > .active > a:hover {
+  	color: @black;
+  	cursor: default;
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  // hide tabs for mobile devices
+  .tabs {
+    .hidden();
+  }
+}
+
+.mobile-tabs {
+  .clearfix();
+  width: 100%;
+  height: 24px;
+  margin-top: 32px;
+}
+
+@media (min-width: @screen-md-min) {
+  .mobile-tabs {
+    .hidden();
+  }
+}

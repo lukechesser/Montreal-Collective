@@ -1,0 +1,152 @@
+// ==========================================================================
+// *
+// * Utilities
+// * generic utilities and helpers
+// *
+// ==========================================================================
+
+
+// floats
+.center-block {
+  .center-block();
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+
+// content toggles
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
+// hide from screenreaders and browsers
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// display types
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.visible-xs {
+  .responsive-invisibility();
+  @media (max-width: @screen-xs-max) {
+    .responsive-visibility();
+  }
+  &.visible-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-md {
+    @media (min-width: @screen-md-min) {
+      .responsive-visibility();
+    }
+  }
+}
+.visible-sm {
+  .responsive-invisibility();
+  &.visible-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-visibility();
+    }
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .responsive-visibility();
+  }
+  &.visible-md {
+    @media (min-width: @screen-md-min) {
+      .responsive-visibility();
+    }
+  }
+}
+.visible-md {
+  .responsive-invisibility();
+  &.visible-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-visibility();
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    .responsive-visibility();
+  }
+}
+
+.hidden-xs {
+  .responsive-visibility();
+  @media (max-width: @screen-xs-max) {
+    .responsive-invisibility();
+  }
+  &.hidden-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.hidden-md {
+    @media (min-width: @screen-md-min) {
+      .responsive-invisibility();
+    }
+  }
+}
+.hidden-sm {
+  .responsive-visibility();
+  &.hidden-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-invisibility();
+    }
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .responsive-invisibility();
+  }
+  &.hidden-md {
+    @media (min-width: @screen-md-min) {
+      .responsive-invisibility();
+    }
+  }
+}
+.hidden-md {
+  .responsive-visibility();
+  &.hidden-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.hidden-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-invisibility();
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    .responsive-invisibility();
+  }
+}
