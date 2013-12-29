@@ -21,7 +21,7 @@ var root, // store local path to root
   build; // store local path to build folder
 
 root = './';
-build = root + 'build/';
+build = root + '_site/';
 
 path = {
   main: {

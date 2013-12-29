@@ -2,9 +2,9 @@ name: Montreal Collective
 description: A collection of Montreal's best tech companies, startups, investors, and events
 keywords: montreal, startups, companies, events, tech, investors, meetups, quebec, canada, technology
 
-exclude: [_less, _img, _css, _js, _icons, node_modules, aws-config.json, caisson.json, package.json, README.md, GruntFile.js]
+exclude: [_less, _img, _css, _js, _icons, node_modules, s3_website.yml, package.json, README.md, GruntFile.js]
 safe: false
 source: .
-destination: ./build
+destination: ./_site
 
 port: 3000
