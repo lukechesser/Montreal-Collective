@@ -100,7 +100,9 @@ module.exports = function(grunt) {
         separator: ';'
       },
       main: {
-        src: [ path.main.js.src + '**/*.js' ],
+        src: [
+          path.main.js.src + '**/*.js'
+        ],
         dest: path.main.js.compiled + 'main.js'
       },
     },

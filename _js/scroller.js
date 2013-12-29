@@ -47,7 +47,7 @@
                 // if the header is no longer in view, don't bother calculating parallax values
                 // since no one can see it anymore
                 if (scrollDistance < 400) {
-                    transformWithPrefixes(cache.$title, scrollDistance/2);
+                    transformWithPrefixes(cache.$title, scrollDistance/3.2);
                 }
             });
         }

@@ -24,62 +24,64 @@
 
 	<div class="container">
 
-		<ul class="tabs">
-			<li class="active"><a href="#all">All</a></li>
-			<li><a href="#startups">Startups</a></li>
-			<li><a href="#companies">Companies</a></li>
-			<li><a href="#investors">Investors</a></li>
-			<li><a href="#events">Events</a></li>
+		<ul class="tabs js-tab">
+			<li class="active"><a href="#" data-sort="all">All</a></li>
+			<li><a href="#" data-sort="startups">Startups</a></li>
+			<li><a href="#" data-sort="companies">Companies</a></li>
+			<li><a href="#" data-sort="investors">Investors</a></li>
+			<li><a href="#" data-sort="events">Events</a></li>
 		</ul> <!-- close .tabs -->
 
-		<select class="mobile-tabs">
-			<option>All</option>
-			<option>Startups</option>
-			<option>Companies</option>
-			<option>Investors</option>
-			<option>Events</option>
+		<select class="mobile-tabs js-mobile-tab">
+			<option data-sort="all">All</option>
+			<option data-sort="startups">Startups</option>
+			<option data-sort="companies">Companies</option>
+			<option data-sort="investors">Investors</option>
+			<option data-sort="events">Events</option>
 		</select>
 
-		{% for entry in site.data.entries %}
-			<div class="entry">
-				<div class="row">
-					<div class="col-md-4">
-						<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
-							<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | downcase | split:' ' | join:'-' }}-logo.jpg">
-						</a>
-					</div> <!-- close .col -->
-					<div class="col-md-8">
-						<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
-							<div class="row">
-								<div class="col-sm-7">
-									<h2 class="entry__heading">{{ entry.name }}</h2>
-								</div> <!-- close .col -->
-								<div class="col-sm-5">
-									<h3 class="entry__link">{{ entry.url }}</h3>
-								</div> <!-- close .col -->
-							</div> <!-- close .row -->
+		<ul class="entry-list js-entry-list">
+			{% for entry in site.data.entries %}
+				<li class="entry js-entry" data-category="{{ entry.category }}">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
+								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | downcase | split:' ' | join:'-' }}-logo.jpg">
+							</a>
+						</div> <!-- close .col -->
+						<div class="col-md-8">
+							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
+								<div class="row">
+									<div class="col-sm-7">
+										<h2 class="entry__heading">{{ entry.name }}</h2>
+									</div> <!-- close .col -->
+									<div class="col-sm-5">
+										<h3 class="entry__link">{{ entry.url }}</h3>
+									</div> <!-- close .col -->
+								</div> <!-- close .row -->
+								<div class="row">
+									<div class="col-xs-12">
+										<p class="entry__description">{{ entry.description | truncate:175 }}</p>
+									</div> <!-- close .col -->
+								</div> <!-- close .row -->
+							</a>
 							<div class="row">
 								<div class="col-xs-12">
-									<p class="entry__description">{{ entry.description | truncate:175 }}</p>
+									<ul class="entry__social-links">
+										{% if entry.twitter %}
+											<li><a href="https://twitter.com/{{ entry.twitter }}" target="_blank"><span class="icon icon-twitter"></span></a></li>
+										{% endif %}
+										{% if entry.facebook %}
+											<li><a href="https://facebook.com/{{ entry.facebook }}" target="_blank"><span class="icon icon-facebook"></span></a></li>
+										{% endif %}
+									</ul>
 								</div> <!-- close .col -->
 							</div> <!-- close .row -->
-						</a>
-						<div class="row">
-							<div class="col-xs-12">
-								<ul class="entry__social-links">
-									{% if entry.twitter %}
-										<li><a href="https://twitter.com/{{ entry.twitter }}" target="_blank"><span class="icon icon-twitter"></span></a></li>
-									{% endif %}
-									{% if entry.facebook %}
-										<li><a href="https://facebook.com/{{ entry.facebook }}" target="_blank"><span class="icon icon-facebook"></span></a></li>
-									{% endif %}
-								</ul>
-							</div> <!-- close .col -->
-						</div> <!-- close .row -->
-					</div> <!-- close .col -->
-				</div> <!-- close .row -->
-			</div> <!-- close .entry -->
-		{% endfor %}
+						</div> <!-- close .col -->
+					</div> <!-- close .row -->
+				</li> <!-- close .entry -->
+			{% endfor %}
+		</ul> <!-- close .entry-list -->
 
 		<div class="footer">
 			<div class="row">
@@ -95,13 +97,6 @@
 	</div> <!-- close .container -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
-	<script>
-		(function (window, $, undefined) {
-			var Collective = {};
-			Collective.entries = {{ site.data.entries | jsonify }};
-			window.Collective = Collective;
-		})(window, jQuery);
-	</script>
 	<script src="/js/main.js"></script>
 </body>
 </html>
