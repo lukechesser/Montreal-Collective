@@ -8,17 +8,33 @@
 
 	<title>{{ site.name }} — {{ site.description }}</title>
 
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="description" content="{{ site.description }}">
 	<meta name="author" content="Luke Chesser">
 	<meta name="keywords" content="{{ site.keywords }}">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 	<script type="text/javascript" src="//use.typekit.net/uiq5eqd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="shortcut icon" href="/favicon.png"/>
+	<link rel="shortcut icon" href="/favicon@2x.png"/>
+	<link rel="shortcut icon" href="/favicon.ico"/>
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
 </head>
 <body>
 	<div class="banner banner--duncan js-header">
+		<div class="banner__twitter-follow">
+			<a href="https://twitter.com/mtlcollective" class="twitter-follow-button" data-show-screen-name="true" data-show-count="false" data-lang="en">Follow @mtlcollective</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div> <!-- close .banner__twitter-follow -->
 		<h1 class="banner__heading text-center js-header-title">Montreal Collective</h1>
 	</div> <!-- close .banner -->
 
