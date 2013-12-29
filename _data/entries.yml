@@ -41,4 +41,61 @@
 - name: Behance Meetup
   category: event
   url: www.meetup.com/BehanceReviews/Montreal-CA/
-  description: Behance Portfolio Reviews bring members together at events to present and get feedback on their work, hear from experienced professionals, and meet the local creative community.
+  description: Bringing members together to present and get feedback on their work, hear from experienced professionals, and meet the local creative community.
+
+- name: Context.IO
+  category: startup
+  url: www.context.io
+  description: Context.IO takes care of syncing email data for apps, making it easy to integrate email data into any application.
+  twitter: contextio
+
+- name: CakeMail
+  category: startup
+  url: www.cakemail.com
+  description: CakeMail makes email marketing simple with tools to create and send end emails quickly.
+  twitter: cakemail
+  facebook: cakemail
+
+- name: Planbox
+  category: startup
+  url: www.planbox.com
+  description: Planbox is an agile management tool that makes it easy to map out entire projects with a single tool.
+  twitter: planbox
+  facebook: planbox
+
+- name: Transit App
+  category: startup
+  url: www.thetransitapp.com
+  description: Transit is the simple and beautiful way to get around.
+  twitter: thetransitapp
+  facebook: thetransitapp
+
+- name: Bombardier
+  category: company
+  url: www.bombardier.com
+  description: The world's only manufacturer of both planes and trains. Everywhere people travel by land and in the air, a Bombardier product is ready to transport them.
+  twitter: bombardier
+
+- name: BDC
+  category: investor
+  url: www.bdc.ca/EN
+  description: BDC is the only bank dedicated exclusively to entrepreneurs, offering financing, venture capital and consulting services.
+  twitter: bdc_news
+  facebook: bdc.ca
+
+- name: iNovia Capital
+  category: investor
+  url: www.inovia.vc
+  description: iNovia is a venture capital firm that partners with exceptional entrepreneurs. They are a team of founders, builders and engineers that are passionate about building market-leading technology companies.
+  twitter: iNovia
+  facebook: inoviacapital
+
+- name: FounderFuel
+  category: investor
+  url: www.founderfuel.com
+  description: FounderFuel is a top tier mentor-driven accelerator that helps early stage web, mobile and SaaS startups raise seed capital.
+  twitter: founderfuel
+  facebook: founderfuel
+
+
+

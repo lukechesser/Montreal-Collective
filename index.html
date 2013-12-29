@@ -9,8 +9,8 @@
 	<title>{{ site.name }} — {{ site.description }}</title>
 
 	<meta name="description" content="{{ site.description }}">
-	<meta name="author" content="Luke Chesser">
 	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="author" content="Luke Chesser">
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -21,7 +21,6 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<link rel="shortcut icon" href="/favicon.png"/>
-	<link rel="shortcut icon" href="/favicon@2x.png"/>
 	<link rel="shortcut icon" href="/favicon.ico"/>
 
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
@@ -39,7 +38,6 @@
 	</div> <!-- close .banner -->
 
 	<div class="container">
-
 		<ul class="tabs js-tab">
 			<li class="active"><a href="#" data-sort="all">All</a></li>
 			<li><a href="#" data-sort="startups">Startups</a></li>
@@ -62,7 +60,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
-								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | downcase | split:' ' | join:'-' }}-logo.jpg">
+								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | downcase | split:' ' | join:'-' }}-logo.jpg">
 							</a>
 						</div> <!-- close .col -->
 						<div class="col-md-8">
@@ -109,7 +107,6 @@
 				</div> <!-- close .col -->
 			</div> <!-- close .row -->
 		</div> <!-- close .footer -->
-
 	</div> <!-- close .container -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
