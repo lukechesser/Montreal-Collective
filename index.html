@@ -59,12 +59,12 @@
 				<li class="entry js-entry" data-category="{{ entry.category }}">
 					<div class="row">
 						<div class="col-md-4">
-							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
+							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
 								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' }}-logo.jpg">
 							</a>
 						</div> <!-- close .col -->
 						<div class="col-md-8">
-							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
+							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
 								<div class="row">
 									<div class="col-sm-7">
 										<h2 class="entry__heading">{{ entry.name }}</h2>
@@ -83,10 +83,10 @@
 								<div class="col-xs-12">
 									<ul class="entry__social-links">
 										{% if entry.twitter %}
-											<li><a href="https://twitter.com/{{ entry.twitter }}" target="_blank"><span class="icon icon-twitter"></span></a></li>
+											<li><a href="https://twitter.com/{{ entry.twitter }}" target="_blank" class="js-social-link"><span class="icon icon-twitter"></span></a></li>
 										{% endif %}
 										{% if entry.facebook %}
-											<li><a href="https://facebook.com/{{ entry.facebook }}" target="_blank"><span class="icon icon-facebook"></span></a></li>
+											<li><a href="https://facebook.com/{{ entry.facebook }}" target="_blank" class="js-social-link"><span class="icon icon-facebook"></span></a></li>
 										{% endif %}
 									</ul>
 								</div> <!-- close .col -->
@@ -100,10 +100,10 @@
 		<div class="footer">
 			<div class="row">
 				<div class="col-sm-6 col-sm-push-6">
-					<h5 class="footer__text footer__text--right"><a href="https://github.com/lukechesser/montreal-collective/" target="_blank">Submit a company</a></h5>
+					<h5 class="footer__text footer__text--right"><a href="https://github.com/lukechesser/montreal-collective/" target="_blank" class="js-to-repo">Submit a company</a></h5>
 				</div> <!-- close .col -->
 				<div class="col-sm-6 col-sm-pull-6">
-					<h5 class="footer__text">Supported by <a href="https://ooomf.com/" target="_blank">@ooomf</a></h5>
+					<h5 class="footer__text">Supported by <a href="https://ooomf.com/" target="_blank" class="js-to-ooomf">@ooomf</a></h5>
 				</div> <!-- close .col -->
 			</div> <!-- close .row -->
 		</div> <!-- close .footer -->
@@ -111,5 +111,10 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
 	<script src="/js/main.js"></script>
+	<script type="text/javascript">
+	window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8",
+	window.analytics.load("lxqpvoiofv");
+	window.analytics.page();
+	</script>
 </body>
 </html>
