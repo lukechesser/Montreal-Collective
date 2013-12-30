@@ -80,7 +80,7 @@
 
 - name: Notman House
   category: event
-  url: http://notman.org/
+  url: www.notman.org
   description: Notman House is Montréal’s technology hub and home of the web. Hang out in the downstairs café, meet young entrepreneurs and startups, and join in at events.
   twitter: notmanhouse
   facebook: notmanhouse
@@ -117,3 +117,9 @@
   description: iNovia is a venture capital firm that partners with exceptional entrepreneurs. They are a team of founders, builders and engineers that are passionate about building market-leading technology companies.
   twitter: iNovia
   facebook: inoviacapital
+
+- name: Creative Mornings
+  category: event
+  url: www.creativemornings.com/cities/mtl
+  description: An event put together by Plank's Steve Bissonnette, CM meets at 8am on the last Friday of every month, showcasing unique speakers from various Montreal creative hotspots.
+  twitter: montreal_cm
