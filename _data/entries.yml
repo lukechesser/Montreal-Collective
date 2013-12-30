@@ -8,7 +8,7 @@
 - name: Shopify
   category: company
   url: www.shopify.ca
-  description: Shopify is a powerful ecommerce website platform that allows you to sell online by providing everything you need to create an online store.
+  description: Shopify is a powerful ecommerce website platform that makes selling online easy by providing all of the tools needed to create a beautiful online store.
   twitter: shopify
   facebook: shopify
 
@@ -34,7 +34,7 @@
 - name: CakeMail
   category: startup
   url: www.cakemail.com
-  description: CakeMail makes email marketing simple with tools to create and send end emails quickly.
+  description: CakeMail makes email marketing simple with tools to create and send emails quickly.
   twitter: cakemail
   facebook: cakemail
 
