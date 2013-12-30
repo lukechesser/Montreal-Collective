@@ -186,6 +186,9 @@ module.exports = function(grunt) {
       },
       serve: {
         command: 'jekyll serve'
+      },
+      deploy: {
+        command: 's3_website push'
       }
     },
 
@@ -232,10 +235,10 @@ module.exports = function(grunt) {
   grunt.registerTask('compile-images', ['imagemin']);
   grunt.registerTask('compile-fonts', ['webfont']);
   grunt.registerTask('compile-site', ['shell:build']);
+  grunt.registerTask('deploy', ['shell:deploy']);
 
   // task aliases/sugar
   grunt.registerTask('compile', ['compile-fonts', 'compile-js', 'compile-css', 'compile-images', 'compile-site']);
-  grunt.registerTask('deploy', ['compile']);
   grunt.registerTask('default', ['compile']);
 
   // watch tasks
