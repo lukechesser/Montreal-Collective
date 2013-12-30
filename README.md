@@ -2,15 +2,15 @@
 
 **A collection of Montreal's best tech companies, startups, investors, and events.**
 
-Everything for the site is available to be modified here. To submit a company/event/startup/investor, [fork the repo and submit a pull-request][fork repo] with the changes. Same deal for making any changes to existing entries.
+Everything for the site is available to be modified here. To submit a company/event/startup/investor, [fork the repo and submit a pull-request][#how-to-add-a-company] with the changes. Same deal for making any changes to existing entries.
 
 Most other 'Made by X' sites suffer from a lack of maintenance, because their creators register the domain name, throw up a quick site, quickly lose interest/become overwhelmed by the constant churn of startups, causing the site to become outdated and unmaintained. Since everything for this site is hosted on GitHub in flat files, and the site is hosted on AWS, this should make the project easy to maintain and update. So instead of a flood of emails for me and a shitty outdated website for you, we'll be modern and try this out.
 
-If you want to contribute — even for an entry that isn't yours per-se — feel free. GitHub is a lonely place sometimes, so contributors/maintainers are always welcome, regardless of your skill level or age.
+If you want to contribute — even for an entry that isn't yours per-se — [feel free][#can-i-help-you-maintain-the-project]. GitHub can be a lonely place sometimes, so contributors/maintainers are always welcome, regardless of your skill level or age.
 
 ## How to add a company
 
-To add your entry, follow [the steps for forking the repo and creating a pull-request][fork repo] and update the `_data/entries.yml' file with your entry's information. The mandatory information is as follows:
+To add your entry, follow [the steps for forking the repo and creating a pull-request][fork repo] and update the `_data/entries.yml` file with your entry's information. The mandatory information to include is:
 
 ```
 - name: Entry Name
@@ -20,6 +20,7 @@ To add your entry, follow [the steps for forking the repo and creating a pull-re
 ```
 
 Optionally, you can add:
+
 ```
 - ...
   ...
@@ -29,31 +30,29 @@ Optionally, you can add:
 
 Save your entry at the bottom of the file (use spaces for the indentation, not tabs — YAML doesn't like tabs). Note a couple of guidelines (also see the existing entries for a better idea of what to write):
 
-1. name: Don't name it 'Montreal blah blah'. That's assumed already. So if it's the 'Montreal' chapter of 'Startup Festival', call it Startup Festival.
+1. **name**: Don't name it 'Montreal blah blah'. That's assumed already. So if it's the 'Montreal' chapter of 'Startup Festival', call it Startup Festival.
 
-2. category: Use singular categories (event instead of events). Only list each entry as one, otherwise you might break something.
+2. **category**: Use singular categories (event instead of events). Only list each entry as one, otherwise you might break something.
 
-3. url: Don't put in the `https://` or `http://`. Preferably, don't put in the `/en` or `/fr` either (if it's a bilingual site) — just link to the root domain since it will likely be the more popular version. Leave off the trailing `/` if your website supports it (it looks prettier without the slash <3).
+3. **url**: Don't put in the `https://` or `http://`. Preferably, don't put in the `/en` or `/fr` either (if it's a bilingual site) — just link to the root domain since it will likely be the more popular version. Leave off the trailing `/` if your website supports it (it looks prettier without the slash <3).
 
-4. description: Ease off the *marketing lingo* and definitely leave off the *investor speak* (ie there better not be any appearences of 'digital solution' or 'synergy' anywhere in your description). Use the [third-person narrative](http://en.wikipedia.org/wiki/Third_person) preferrably (ie. don't say 'Shopify is the best platform for YOU to build an online store').
+4. **description**: Ease off the *marketing lingo* and definitely leave off the *investor speak* (ie there better not be any appearences of 'digital solution' or 'synergy' anywhere in your description). Use the [third-person narrative](http://en.wikipedia.org/wiki/Third_person) preferrably (ie. don't say 'Shopify is the best platform for YOU to build an online store').
 
-5. twitter (optional): leave off the `@`. Preferrably all lowercase.
+5. **twitter** (optional): leave off the `@`. Preferrably all lowercase.
 
-6. facebook (optional): preferrably all lowercase.
+6. **facebook** (optional): preferrably all lowercase.
 
-As for the image/logo, fire up Photoshop and [download this template PSD](http://cl.ly/T8j5). If you turn on the guidelines, make sure your logo fits inside the inner guidelines and is roughly centered. Preferrably, use a background color other than white (it makes your company standout more and looks less boring). Save the image as a JPEG (high-quality is fine, because it gets run through a minimizer before deploying anyways). Put the logo in the `_img` directory. **Not the `img` directory**.
+As for the image/logo, fire up Photoshop and [download this template PSD](http://cl.ly/T8j5). If you turn on the guidelines, make sure your logo fits inside the inner guidelines and is roughly centered. Preferrably, use a background color other than white (it makes your company standout more and looks less boring). Save the image as a JPEG (high-quality is fine, because it gets run through a minimizer before deploying anyways). **Put the logo in the `_img` directory**. *Not the `img` directory*.
 
-Commit and push. Then open up a pull-request.
+**Commit and push. Then open up a pull-request.**
 
-**It would be great if you linked to the site somewhere on your own website (ex. a link in your site's footer linking 'Made in Montreal' to this site).**
+Lastly, it would be great if you linked to the site somewhere on your own website (ex. a link in your site's footer linking 'Made in Montreal' to this site).
 
 If this all sounds too technical, feel free to [create an issue][create an issue] with the same information (logo, name, description, etc.) and one of the maintainers will add it in when they get time.
 
 ## Editing existing entries
 
-Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you.
-
-Note that changes can be made by anyone, but preference will be given for employees/volunteers of the company/startup/event/investor.
+Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you. Note that changes can be made by anyone, but preference will be given for employees/volunteers of the company/startup/event/investor.
 
 ## FAQs
 
