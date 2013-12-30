@@ -25,29 +25,11 @@
   twitter: ubisoft
   facebook: ubisoftmontreal
 
-- name: C2MTL
-  category: event
-  url: www.c2mtl.com
-  description: C2MTL is an immersive three-day event with world-renowned speakers, interactive exhibits, collaborative workshops and a creativity Boot Camp.
-  twitter: C2MTL
-  facebook: C2MTL
-
 - name: Dribbble Meetup
   category: event
   url: www.meetup.com/dribbble/Montreal-CA/
   description: An informal event for designers, developers, and creatives hosted by @kevinclark of Shopify, held monthly in downtown Montreal/Plateau.
   twitter: kevinclark
-
-- name: Behance Meetup
-  category: event
-  url: www.meetup.com/BehanceReviews/Montreal-CA/
-  description: Bringing members together to present and get feedback on their work, hear from experienced professionals, and meet the local creative community.
-
-- name: Context.IO
-  category: startup
-  url: www.context.io
-  description: Context.IO takes care of syncing email data for apps, making it easy to integrate email data into any application.
-  twitter: contextio
 
 - name: CakeMail
   category: startup
@@ -55,6 +37,11 @@
   description: CakeMail makes email marketing simple with tools to create and send end emails quickly.
   twitter: cakemail
   facebook: cakemail
+
+- name: Behance Meetup
+  category: event
+  url: www.meetup.com/BehanceReviews/Montreal-CA/
+  description: Bringing members together to present and get feedback on their work, hear from experienced professionals, and meet the local creative community.
 
 - name: Planbox
   category: startup
@@ -70,12 +57,6 @@
   twitter: thetransitapp
   facebook: thetransitapp
 
-- name: Bombardier
-  category: company
-  url: www.bombardier.com
-  description: The world's only manufacturer of both planes and trains. Everywhere people travel by land and in the air, a Bombardier product is ready to transport them.
-  twitter: bombardier
-
 - name: BDC
   category: investor
   url: www.bdc.ca/EN
@@ -83,12 +64,12 @@
   twitter: bdc_news
   facebook: bdc.ca
 
-- name: iNovia Capital
-  category: investor
-  url: www.inovia.vc
-  description: iNovia is a venture capital firm that partners with exceptional entrepreneurs. They are a team of founders, builders and engineers that are passionate about building market-leading technology companies.
-  twitter: iNovia
-  facebook: inoviacapital
+- name: C2MTL
+  category: event
+  url: www.c2mtl.com
+  description: C2MTL is an immersive three-day event with world-renowned speakers, interactive exhibits, collaborative workshops and a creativity Boot Camp.
+  twitter: C2MTL
+  facebook: C2MTL
 
 - name: FounderFuel
   category: investor
@@ -97,5 +78,42 @@
   twitter: founderfuel
   facebook: founderfuel
 
+- name: Notman House
+  category: event
+  url: http://notman.org/
+  description: Notman House is Montréal’s technology hub and home of the web. Hang out in the downstairs café, meet young entrepreneurs and startups, and join in at events.
+  twitter: notmanhouse
+  facebook: notmanhouse
 
+- name: FounderFuel Demo Day
+  category: event
+  url: www.founderfuel.com/category/demo-day/
+  description: Watch newly created startups pitch to a crowd of investors, entrepreneurs, and press as part of the FounderFuel accelerator program.
+  twitter: founderfuel
 
+- name: Context.IO
+  category: startup
+  url: www.context.io
+  description: Context.IO takes care of syncing email data for apps, making it easy to integrate email data into any application.
+  twitter: contextio
+
+- name: Startup Weekend
+  category: event
+  url: montreal.startupweekend.org
+  description: Startup Weekend is an opportunity to meet project leaders, web professionals, and entrepreneurs. Come share ideas, form teams, and launch startups!
+  twitter: startupweekend
+  facebook: startupweekend
+
+- name: Frank & Oak
+  category: startup
+  url: www.frankandoak.com
+  description: Frank & Oak is an ecommerce retailer that designs, manufactures, and curates a monthly collection of fine clothing and accessories.
+  twitter: frankandoak
+  facebook: frankandoak
+
+- name: iNovia Capital
+  category: investor
+  url: www.inovia.vc
+  description: iNovia is a venture capital firm that partners with exceptional entrepreneurs. They are a team of founders, builders and engineers that are passionate about building market-leading technology companies.
+  twitter: iNovia
+  facebook: inoviacapital

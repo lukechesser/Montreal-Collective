@@ -60,7 +60,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank">
-								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | downcase | split:' ' | join:'-' }}-logo.jpg">
+								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' }}-logo.jpg">
 							</a>
 						</div> <!-- close .col -->
 						<div class="col-md-8">
