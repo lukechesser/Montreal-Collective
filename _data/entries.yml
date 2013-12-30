@@ -28,8 +28,8 @@
 - name: Dribbble Meetup
   category: event
   url: www.meetup.com/dribbble/Montreal-CA/
-  description: An informal event for designers, developers, and creatives hosted by @kevinclark of Shopify, held monthly in downtown Montreal/Plateau.
-  twitter: kevinclark
+  description: An informal event for designers, developers, and creatives hosted by designer Kevin Clark of Shopify, held monthly in downtown Montreal/Plateau.
+  twitter: vernalkick
 
 - name: CakeMail
   category: startup
@@ -107,7 +107,7 @@
 - name: Frank & Oak
   category: startup
   url: www.frankandoak.com
-  description: Frank & Oak is an ecommerce retailer that designs, manufactures, and curates a monthly collection of fine clothing and accessories.
+  description: Frank & Oak is an online retailer that designs, manufactures, and curates a monthly collection of fine clothing and accessories.
   twitter: frankandoak
   facebook: frankandoak
 
