@@ -2,11 +2,11 @@
 
 **A collection of Montreal's best tech companies, startups, investors, and events.**
 
-Everything for the site is available to be modified here. To submit a company/event/startup/investor, [fork the repo and submit a pull-request][#how-to-add-a-company] with the changes. Same deal for making any changes to existing entries.
+Everything for the site is available to be modified here. To submit a company/event/startup/investor, [fork the repo and submit a pull-request](#how-to-add-a-company) with the changes. Same deal for making any changes to existing entries.
 
 Most other 'Made by X' sites suffer from a lack of maintenance, because their creators register the domain name, throw up a quick site, quickly lose interest/become overwhelmed by the constant churn of startups, causing the site to become outdated and unmaintained. Since everything for this site is hosted on GitHub in flat files, and the site is hosted on AWS, this should make the project easy to maintain and update. So instead of a flood of emails for me and a shitty outdated website for you, we'll be modern and try this out.
 
-If you want to contribute — even for an entry that isn't yours per-se — [feel free][#can-i-help-you-maintain-the-project]. GitHub can be a lonely place sometimes, so contributors/maintainers are always welcome, regardless of your skill level or age.
+If you want to contribute — even for an entry that isn't yours per-se — [feel free](#can-i-help-you-maintain-the-project). GitHub can be a lonely place sometimes, so contributors/maintainers are always welcome, regardless of your skill level or age.
 
 ## How to add a company
 
@@ -42,7 +42,7 @@ Save your entry at the bottom of the file (use spaces for the indentation, not t
 
 6. **facebook** (optional): preferrably all lowercase.
 
-As for the image/logo, fire up Photoshop and [download this template PSD](http://cl.ly/T8j5). If you turn on the guidelines, make sure your logo fits inside the inner guidelines and is roughly centered. Preferrably, use a background color other than white (it makes your company standout more and looks less boring). Save the image as a JPEG (high-quality is fine, because it gets run through a minimizer before deploying anyways). **Put the logo in the `_img` directory**. *Not the `img` directory*.
+As for the image/logo, fire up Photoshop and [download this template PSD](http://cl.ly/T8j5). If you turn on the guidelines, make sure your logo fits inside the inner guidelines and is roughly centered. Preferrably, use a background color other than white (it makes your company standout more and looks less boring). Save the image as a JPEG (high-quality is fine, because it gets run through a minimizer before deploying anyways). **Put the logo in the `_img` directory, not the `img` directory**.
 
 **Commit and push. Then open up a pull-request.**
 
