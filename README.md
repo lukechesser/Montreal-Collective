@@ -54,6 +54,23 @@ If this all sounds too technical, feel free to [create an issue][create an issue
 
 Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you. Note that changes can be made by anyone, but preference will be given for employees/volunteers of the company/startup/event/investor.
 
+## Contributing
+
+To setup the environment locally, clone the repo and from the command line:
+
+1. Install [jekyll](https://github.com/jekyll/jekyll) globally with `gem install jekyll`.
+
+If you're only editing the `_data/entries.yml` file, the only command you need is `jekyll serve`, which will build the static site and serve the file at [http://0.0.0.0:3000].
+
+If you want to do more than just edit the `_data/entries.yml` file, you'll also have to install [Grunt](https://github.com/gruntjs/grunt) and its dependencies:
+
+2. Install [grunt-cli](https://github.com/gruntjs/grunt-cli) globally with `npm install -g grunt-cli`.
+3. Navigate to the root `/montreal-collective` directory, then run `npm install`. npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
+
+When completed, you'll be able to run the various Grunt commands provided from the command line (look in the GruntFile.js for the additional commands).
+
+**Unfamiliar with `npm`? Don't have node installed?** That's okay. npm stands for [node packaged modules](http://npmjs.org/) and is a way to manage development dependencies through node.js. [Download and install node.js](http://nodejs.org/download/) before proceeding.
+
 ## FAQs
 
 #### What's the difference between a startup and a company?
