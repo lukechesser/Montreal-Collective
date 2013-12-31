@@ -60,7 +60,7 @@ To setup the environment locally, clone the repo and from the command line:
 
 1. Install [jekyll](https://github.com/jekyll/jekyll) globally with `gem install jekyll`.
 
-If you're only editing the `_data/entries.yml` file, the only command you need is `jekyll serve`, which will build the static site and serve the file at [http://0.0.0.0:3000].
+If you're only editing the `_data/entries.yml` file, the only command you need is `jekyll serve`, which will build the static site and serve the file at [http://0.0.0.0:3000](http://0.0.0.0:3000).
 
 If you want to do more than just edit the `_data/entries.yml` file, you'll also have to install [Grunt](https://github.com/gruntjs/grunt) and its dependencies:
 
