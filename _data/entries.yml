@@ -123,3 +123,9 @@
   url: www.creativemornings.com/cities/mtl
   description: An event put together by Plank's Steve Bissonnette, CM meets at 8am on the last Friday of every month, showcasing unique speakers from various Montreal creative hotspots.
   twitter: montreal_cm
+  
+- name: CocoaHeads
+  category: event
+  url: cocoaheadsmtl.com
+  description: iOS and Mac developers, assemble! Hosted at McKibbin's on the second Tuesday of every month, showcasing drinks, food and talks from local Apple developers and designers.
+  twitter: cocoaheadsmtl
