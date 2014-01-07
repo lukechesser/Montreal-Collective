@@ -29,85 +29,89 @@
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
 </head>
 <body>
-	<div class="banner banner--duncan js-header">
-		<div class="banner__twitter-follow">
-			<a href="https://twitter.com/mtlcollective" class="twitter-follow-button" data-show-screen-name="true" data-show-count="false" data-lang="en">Follow @mtlcollective</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div> <!-- close .banner__twitter-follow -->
-		<h1 class="banner__heading text-center js-header-title">Montreal Collective</h1>
-	</div> <!-- close .banner -->
+	<div class="header js-header">
+		<div class="banner banner--duncan">
+			<div class="banner__twitter-follow">
+				<a href="https://twitter.com/mtlcollective" class="twitter-follow-button" data-show-screen-name="true" data-show-count="false" data-lang="en">Follow @mtlcollective</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div> <!-- close .banner__twitter-follow -->
+			<h1 class="banner__heading text-center js-header-title">Montreal Collective</h1>
+		</div> <!-- close .banner -->
+	</div> <!-- close .header -->
 
-	<div class="container">
-		<ul class="tabs js-tab">
-			<li class="active"><a href="#" data-sort="all">All</a></li>
-			<li><a href="#" data-sort="startups">Startups</a></li>
-			<li><a href="#" data-sort="companies">Companies</a></li>
-			<li><a href="#" data-sort="investors">Investors</a></li>
-			<li><a href="#" data-sort="events">Events</a></li>
-		</ul> <!-- close .tabs -->
+	<div class="content js-content">
+		<div class="container">
+			<ul class="tabs js-tab">
+				<li class="active"><a href="#" data-sort="all">All</a></li>
+				<li><a href="#" data-sort="startups">Startups</a></li>
+				<li><a href="#" data-sort="companies">Companies</a></li>
+				<li><a href="#" data-sort="investors">Investors</a></li>
+				<li><a href="#" data-sort="events">Events</a></li>
+			</ul> <!-- close .tabs -->
 
-		<select class="mobile-tabs js-mobile-tab">
-			<option data-sort="all">All</option>
-			<option data-sort="startups">Startups</option>
-			<option data-sort="companies">Companies</option>
-			<option data-sort="investors">Investors</option>
-			<option data-sort="events">Events</option>
-		</select>
+			<select class="mobile-tabs js-mobile-tab">
+				<option data-sort="all">All</option>
+				<option data-sort="startups">Startups</option>
+				<option data-sort="companies">Companies</option>
+				<option data-sort="investors">Investors</option>
+				<option data-sort="events">Events</option>
+			</select>
 
-		<ul class="entry-list js-entry-list">
-			{% for entry in site.data.entries %}
-				<li class="entry js-entry" data-category="{{ entry.category }}">
-					<div class="row">
-						<div class="col-md-4">
-							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
-								<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' }}-logo.jpg">
-							</a>
-						</div> <!-- close .col -->
-						<div class="col-md-8">
-							<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
-								<div class="row">
-									<div class="col-sm-7">
-										<h2 class="entry__heading">{{ entry.name }}</h2>
-									</div> <!-- close .col -->
-									<div class="col-sm-5">
-										<h3 class="entry__link">{{ entry.url }}</h3>
-									</div> <!-- close .col -->
-								</div> <!-- close .row -->
+			<ul class="entry-list js-entry-list">
+				{% for entry in site.data.entries %}
+					<li class="entry js-entry" data-category="{{ entry.category }}">
+						<div class="row">
+							<div class="col-md-4">
+								<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
+									<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' }}-logo.jpg">
+								</a>
+							</div> <!-- close .col -->
+							<div class="col-md-8">
+								<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
+									<div class="row">
+										<div class="col-sm-7">
+											<h2 class="entry__heading">{{ entry.name }}</h2>
+										</div> <!-- close .col -->
+										<div class="col-sm-5">
+											<h3 class="entry__link">{{ entry.url }}</h3>
+										</div> <!-- close .col -->
+									</div> <!-- close .row -->
+									<div class="row">
+										<div class="col-xs-12">
+											<p class="entry__description">{{ entry.description | truncate:175 }}</p>
+										</div> <!-- close .col -->
+									</div> <!-- close .row -->
+								</a>
 								<div class="row">
 									<div class="col-xs-12">
-										<p class="entry__description">{{ entry.description | truncate:175 }}</p>
+										<ul class="entry__social-links">
+											{% if entry.twitter %}
+												<li><a href="https://twitter.com/{{ entry.twitter }}" target="_blank" class="js-social-link"><span class="icon icon-twitter"></span></a></li>
+											{% endif %}
+											{% if entry.facebook %}
+												<li><a href="https://facebook.com/{{ entry.facebook }}" target="_blank" class="js-social-link"><span class="icon icon-facebook"></span></a></li>
+											{% endif %}
+										</ul>
 									</div> <!-- close .col -->
 								</div> <!-- close .row -->
-							</a>
-							<div class="row">
-								<div class="col-xs-12">
-									<ul class="entry__social-links">
-										{% if entry.twitter %}
-											<li><a href="https://twitter.com/{{ entry.twitter }}" target="_blank" class="js-social-link"><span class="icon icon-twitter"></span></a></li>
-										{% endif %}
-										{% if entry.facebook %}
-											<li><a href="https://facebook.com/{{ entry.facebook }}" target="_blank" class="js-social-link"><span class="icon icon-facebook"></span></a></li>
-										{% endif %}
-									</ul>
-								</div> <!-- close .col -->
-							</div> <!-- close .row -->
-						</div> <!-- close .col -->
-					</div> <!-- close .row -->
-				</li> <!-- close .entry -->
-			{% endfor %}
-		</ul> <!-- close .entry-list -->
+							</div> <!-- close .col -->
+						</div> <!-- close .row -->
+					</li> <!-- close .entry -->
+				{% endfor %}
+			</ul> <!-- close .entry-list -->
 
-		<div class="footer">
-			<div class="row">
-				<div class="col-sm-6 col-sm-push-6">
-					<h5 class="footer__text footer__text--right"><a href="https://github.com/lukechesser/montreal-collective/" target="_blank" class="js-to-repo">Submit a company</a></h5>
-				</div> <!-- close .col -->
-				<div class="col-sm-6 col-sm-pull-6">
-					<h5 class="footer__text">Supported by <a href="https://ooomf.com/" target="_blank" class="js-to-ooomf">@ooomf</a></h5>
-				</div> <!-- close .col -->
-			</div> <!-- close .row -->
-		</div> <!-- close .footer -->
-	</div> <!-- close .container -->
+			<div class="footer">
+				<div class="row">
+					<div class="col-sm-6 col-sm-push-6">
+						<h5 class="footer__text footer__text--right"><a href="https://github.com/lukechesser/montreal-collective/" target="_blank" class="js-to-repo">Submit a company</a></h5>
+					</div> <!-- close .col -->
+					<div class="col-sm-6 col-sm-pull-6">
+						<h5 class="footer__text">Supported by <a href="https://ooomf.com/" target="_blank" class="js-to-ooomf">@ooomf</a></h5>
+					</div> <!-- close .col -->
+				</div> <!-- close .row -->
+			</div> <!-- close .footer -->
+		</div> <!-- close .container -->
+	</div> <!-- close .content -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
 	<script src="/js/main.js"></script>

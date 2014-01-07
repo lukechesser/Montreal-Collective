@@ -738,6 +738,18 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  position: relative;
+  z-index: 0;
+  margin-bottom: -80px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1654,7 +1666,7 @@ h6 {
 
 .banner {
   width: 100%;
-  height: 200px;
+  height: 280px;
   padding: 20px;
   background-color: #a6a6a6;
   overflow-y: hidden;
@@ -1671,7 +1683,7 @@ h6 {
 
 @media (min-width: 480px) {
   .banner {
-    height: 280px;
+    height: 360px;
   }
 
   .banner__heading {
@@ -1683,7 +1695,7 @@ h6 {
 
 @media (min-width: 768px) {
   .banner {
-    height: 400px;
+    height: 480px;
   }
 
   .banner__heading {

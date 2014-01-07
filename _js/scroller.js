@@ -2,30 +2,38 @@
 
     'use strict';
 
-    var $body,
-        cache;
+    var $window, // store reference to $(window)
+        cache, // store references to $(DOM)
+        scrollThreshold; // after scrolling a certain distance, don't bother calculating
 
-    $body = $(document.body);
+    $window = $(window);
 
     cache = {
         $header: $('.js-header'),
         $title: $('.js-header-title'),
     };
 
-    // makes transform cross-browser
-    function transformWithPrefixes($element, yDistance) {
-        $element.css({
-            WebkitTransform: createTranslationString(yDistance),
-            MozTransform: createTranslationString(yDistance),
-            MsTransform: createTranslationString(yDistance),
-            OTransform: createTranslationString(yDistance),
-            transform: createTranslationString(yDistance)
-        });
-    }
+    // set to header height
+    // plus a little extra for padding
+    scrollThreshold = cache.$header.height() + 80;
 
-    // helper to return the string value for transform
-    function createTranslationString(yDistance) {
-        return 'translateY(' + (yDistance) + 'px)';
+    // helper function transform element vertically by a certain distance
+    function transformAndFadeElement($element, scrollDistance, transformMultiplier, opacityMultiplier) {
+        var yDistance,
+            opacity,
+            cssObject = {};
+
+        yDistance = scrollDistance * transformMultiplier;
+        opacity = scrollThreshold / (scrollThreshold + scrollDistance * opacityMultiplier);
+
+        if (!isNaN(yDistance)) {
+            cssObject.transform = 'translateY(' + (yDistance) + 'px)';
+        }
+        if (!isNaN(opacity)) {
+            cssObject.opacity = opacity;
+        }
+
+        $element.css(cssObject);
     }
 
     // tests for touch
@@ -41,13 +49,14 @@
         // only do the parallax scrolling
         // for non-touch devices
         if (!isTouchDevice) {
-            $(window).on('scroll', function () {
-                var scrollDistance = $(window).scrollTop();
+            $window.on('scroll', function () {
+                var scrollDistance = $window.scrollTop();
 
                 // if the header is no longer in view, don't bother calculating parallax values
                 // since no one can see it anymore
-                if (scrollDistance < 400) {
-                    transformWithPrefixes(cache.$title, scrollDistance/3.2);
+                if (scrollDistance < scrollThreshold) {
+                    transformAndFadeElement(cache.$header, scrollDistance, 1, null);
+                    transformAndFadeElement(cache.$title, scrollDistance, (-1/2.5), 5);
                 }
             });
         }
