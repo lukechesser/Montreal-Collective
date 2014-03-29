@@ -188,7 +188,7 @@ module.exports = function(grunt) {
         command: 'jekyll serve'
       },
       deploy: {
-        command: 's3_website push --headless'
+        command: 'dotenv s3_website push --headless'
       }
     },
 

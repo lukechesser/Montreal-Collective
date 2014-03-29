@@ -15,6 +15,7 @@ GEM
     configure-s3-website (1.5.2)
       deep_merge (= 1.0.0)
     deep_merge (1.0.0)
+    dotenv (0.10.0)
     erubis (2.7.0)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
@@ -77,5 +78,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   jekyll
   s3_website

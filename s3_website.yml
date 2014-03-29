@@ -1,0 +1,7 @@
+---
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+s3_bucket: montrealcollective.com
+cloudfront_distribution_id: ELDWNK1T2E13P
+gzip: true
+max_age: 3600
