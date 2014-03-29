@@ -242,6 +242,7 @@ module.exports = function(grunt) {
   grunt.registerTask('compile-fonts', ['webfont']);
   grunt.registerTask('compile-site', ['shell:build']);
   grunt.registerTask('deploy', ['shell:deploy']);
+  grunt.registerTask('deploy-automated', ['shell:deployAutomated']);
 
   // task aliases/sugar
   grunt.registerTask('compile', ['compile-js', 'compile-css', 'compile-images', 'compile-site']);
