@@ -34,7 +34,7 @@
 
 - name: Dribbble Meetup
   category: event
-  url: meetup.com/dribbble/Montreal-CA/
+  url: mtldribbblemeetup.com
   description: An informal event for designers, developers, and creatives hosted by designer Kevin Clark of Shopify, held monthly in downtown Montreal/Plateau.
   twitter: vernalkick
 
@@ -66,7 +66,7 @@
 
 - name: BDC
   category: investor
-  url: bdc.ca/EN
+  url: bdc.ca
   description: BDC is the only bank dedicated exclusively to entrepreneurs, offering financing, venture capital and consulting services.
   twitter: bdc_news
   facebook: bdc.ca
