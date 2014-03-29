@@ -181,7 +181,8 @@ module.exports = function(grunt) {
 
     shell: {
       options: {
-          stdout: true
+          stdout: true,
+          failOnError: true,
       },
       build: {
         command: 'jekyll build',
