@@ -191,6 +191,9 @@ module.exports = function(grunt) {
       },
       deploy: {
         command: 'dotenv s3_website push --headless'
+      },
+      deployAutomated: {
+        command: 's3_website push --headless'
       }
     },
 
