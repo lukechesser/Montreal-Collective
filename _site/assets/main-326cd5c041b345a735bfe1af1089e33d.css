@@ -1705,8 +1705,7 @@ h6 {
   }
 }
 
-.banner--duncan {
-  background-image: url('../img/montreal-duncan.jpg');
+.banner--with-bg-image {
   background-position: center;
   background-size: cover;
 }

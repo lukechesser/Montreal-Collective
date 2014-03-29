@@ -17,25 +17,27 @@
 
 
 var root, // store local path to root
+  assets, // store local path to assets
   path, // store local paths to files
   build; // store local path to build folder
 
 root = './';
 build = root + '_site/';
+assets = root + '_assets/';
 
 path = {
   main: {
     js: {
       src: root + '_js/',
-      compiled: root + 'js/',
+      compiled: assets + 'javascripts/',
     },
     css: {
       src: root + '_less/',
-      compiled: root + 'css/',
+      compiled: assets + 'stylesheets/',
     },
     images: {
       src: root + '_img/',
-      compiled: root + 'img/'
+      compiled: assets + 'images/'
     },
     webfonts: {
       src: root + '_icons/',
@@ -165,7 +167,7 @@ module.exports = function(grunt) {
             mixinPrefix: 'icon-',
           },
           stylesheet: 'less',
-          relativeFontPath: '../webfonts/',
+          relativeFontPath: '../../webfonts/',
           font: 'main-iconfont',
           destHtml: path.main.webfonts.src,
         },

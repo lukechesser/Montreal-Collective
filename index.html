@@ -15,7 +15,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	{% stylesheet main %}
 
 	<script type="text/javascript" src="//use.typekit.net/uiq5eqd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -30,7 +30,7 @@
 </head>
 <body>
 	<div class="header js-header">
-		<div class="banner banner--duncan">
+		<div class="banner banner--with-bg-image" style="background-image: url({{ 'montreal-duncan.jpg' | asset_path }});">
 			<div class="banner__twitter-follow">
 				<a href="https://twitter.com/mtlcollective" class="twitter-follow-button" data-show-screen-name="true" data-show-count="false" data-lang="en">Follow @mtlcollective</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -63,7 +63,7 @@
 						<div class="row">
 							<div class="col-md-4">
 								<a href="http://{{ entry.url }}" title="{{ entry.name }} — {{ entry.description }}" target="_blank" data-name="{{ entry.name }}" class="js-entry-link">
-									<img class="img-responsive entry__image visible-md" src="/img/{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' }}-logo.jpg">
+									<img class="img-responsive entry__image visible-md" src="{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' | append:'-logo.jpg' | asset_path }}">
 								</a>
 							</div> <!-- close .col -->
 							<div class="col-md-8">
@@ -114,7 +114,7 @@
 	</div> <!-- close .content -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
-	<script src="/js/main.js"></script>
+	{% javascript main.min %}
 	<script type="text/javascript">
 	window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8",
 	window.analytics.load("lxqpvoiofv");
