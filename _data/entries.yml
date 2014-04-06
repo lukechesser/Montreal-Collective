@@ -1,9 +1,9 @@
-- name: ooomf
+- name: Crew
   category: startup
-  url: ooomf.com
+  url: pickcrew.com
   description: A premium marketplace of the best mobile & web talent where the talent picks the work.
-  twitter: ooomf
-  facebook: ooomf
+  twitter: crewlabs
+  facebook: crewlabs
 
 - name: Breather
   category: startup
