@@ -5,6 +5,12 @@
   twitter: crewlabs
   facebook: crewlabs
 
+- name: CloudOps
+  category: company
+  url: cloudops.com
+  description: CloudOps offers high performance private and public cloud computing solutions with reliable and cost-effective operations.
+  twitter: CloudOps_
+
 - name: Breather
   category: startup
   url: breather.com
