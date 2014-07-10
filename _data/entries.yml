@@ -148,3 +148,9 @@
   url: freshmint.com
   description: FreshMint cooks up delicious wholesome meals and delivers them in record times for unbeatable value.
   twitter: getfreshmint
+
+- name: Astucemedia
+  category: company
+  url: astucemedia.com
+  description: Astucemedia provides real-time 3D graphic design for broadcast TV, interactive displays and videowalls around the world. Live-data integration with Bloomberg, ThomsonReuters, OPTA, StormGEO and more. We're in the Old Port & always looking to hire local designers and developers.
+  twitter: astucemedia
