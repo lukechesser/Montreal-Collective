@@ -1,3 +1,10 @@
+- name: 1dev.ca
+  category: startup
+  url: signup.1dev.ca
+  description: 1dev.ca is a new Montreal-based (Canada) company created to build instant connections between clients and freelancers in the technology industry and, save time.
+  twitter: 1devca
+  facebook: 1dev.ca
+
 - name: Crew
   category: startup
   url: pickcrew.com
