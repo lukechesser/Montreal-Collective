@@ -162,3 +162,10 @@
   description: Provender is an online marketplace connecting chefs and grocers with local farms to facilitate a direct supply of goods.
   twitter: provender
   facebook: getprovender
+  
+- name: LightSpeed
+  category: company
+  url: lightspeedretail.com
+  description: Lightspeed is a Cloud Point of Sale system to manage inventory, engage customers, and enable selling anywhere.
+  twitter: LightSpeedPOS
+  facebook: LightSpeedPOS
