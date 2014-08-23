@@ -1,5 +1,7 @@
 # Montreal Collective
 
+[ ![Codeship Status for lukechesser/Montreal-Collective](https://codeship.io/projects/ba695d90-99b3-0131-0bc4-32f23639df46/status?branch=master)](https://codeship.io/projects/17363)
+
 **A collection of Montreal's best tech companies, startups, investors, and events.**
 
 Everything for the site is available to be modified here. To submit a company/event/startup/investor, [fork the repo and submit a pull-request](#how-to-add-a-company) with the changes. Same deal for making any changes to existing entries.
@@ -44,7 +46,7 @@ Save your entry at the bottom of the file (use spaces for the indentation, not t
 
 As for the image/logo, fire up Photoshop and [download this template PSD](http://cl.ly/T8j5). If you turn on the guidelines, make sure your logo fits inside the inner guidelines and is roughly centered. Preferrably, use a background color other than white (it makes your company standout more and looks less boring). Save the image as a JPEG (high-quality is fine, because it gets run through a minimizer before deploying anyways). **Put the logo in the `_img` directory, not the `img` directory**.
 
-**Commit and push. Then open up a pull-request.**
+**Commit and push. Then open up a pull-request.** If the pull-reqest is approved, it will be merged and automatically pushed to the site via a build process on [Codeship](https://codeship.io/).
 
 Lastly, it would be great if you linked to the site somewhere on your own website (ex. a link in your site's footer linking 'Made in Montreal' to this site).
 
@@ -85,6 +87,10 @@ Yep! [Message me on twitter][luke twitter] and I'll be happy to give you some ac
 ## Contributors
 
 - Luke Chesser ([Twitter](https://twitter.com/lukechesser), [Blog](http://imluke.me/), [Dribbble](http://dribbble.com/lukechesser), [GitHub](https://github.com/lukechesser))
+- Sam Vermette ([Twitter](https://twitter.com/samvermette), [GitHub](https://github.com/samvermette))
+- Mauricio Idarraga ([GitHub](https://github.com/midarraga))
+- Will Steves ([Github](https://github.com/swill))
+- Frederic Thouin ([GitHub](https://github.com/fredbusbud))
 
 ## License
 
