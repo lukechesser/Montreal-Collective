@@ -1,10 +1,3 @@
-- name: 1dev.ca
-  category: startup
-  url: signup.1dev.ca
-  description: 1dev.ca is a new Montreal-based (Canada) company created to build instant connections between clients and freelancers in the technology industry and, save time.
-  twitter: 1devca
-  facebook: 1dev.ca
-
 - name: Crew
   category: startup
   url: pickcrew.com
@@ -162,6 +155,12 @@
   description: Busbud makes bus travel easy. By connecting travelers to bus operators, Busbud makes it a breeze to search, compare and book city-to-city bus tickets, all around the world.
   twitter: busbud
   facebook: Busbud  
+
+- name: 1dev.ca
+  category: startup
+  url: 1dev.ca
+  description: 1dev is a company created to build instant connections between clients and freelancers in the technology industry, while saving time.
+  twitter: 1devca
   
 - name: Provender
   category: startup
