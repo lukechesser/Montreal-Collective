@@ -90,6 +90,7 @@ Yep! [Message me on twitter][luke twitter] and I'll be happy to give you some ac
 - Sam Vermette ([Twitter](https://twitter.com/samvermette), [GitHub](https://github.com/samvermette))
 - Mauricio Idarraga ([GitHub](https://github.com/midarraga))
 - Will Steves ([Github](https://github.com/swill))
+- 1devca ([Github](https://github.com/1devca))
 - Frederic Thouin ([GitHub](https://github.com/fredbusbud))
 
 ## License
