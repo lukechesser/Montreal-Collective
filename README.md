@@ -2,13 +2,11 @@
 
 [ ![Codeship Status for lukechesser/Montreal-Collective](https://codeship.io/projects/ba695d90-99b3-0131-0bc4-32f23639df46/status?branch=master)](https://codeship.io/projects/17363)
 
-**A collection of Montreal's best tech companies, startups, investors, and events.**
+**A collection of Montreal's best tech companies, startups, agencies, investors, and events.**
 
-Everything for the site is available to be modified here. To submit a company/event/startup/investor, [fork the repo and submit a pull-request](#how-to-add-a-company) with the changes. Same deal for making any changes to existing entries.
+Everything for the site is available to be modified here. To submit a company/agency/startup/investor, [fork the repo and submit a pull-request](#how-to-add-a-company) with the changes. Same deal for making any changes to existing entries.
 
 Most other 'Made by X' sites suffer from a lack of maintenance, because their creators register the domain name, throw up a quick site, quickly lose interest/become overwhelmed by the constant churn of startups, causing the site to become outdated and unmaintained. Since everything for this site is hosted on GitHub in flat files, and the site is hosted on AWS, this should make the project easy to maintain and update. So instead of a flood of emails for me and a shitty outdated website for you, we'll be modern and try this out.
-
-If you want to contribute — even for an entry that isn't yours per-se — [feel free](#can-i-help-you-maintain-the-project). GitHub can be a lonely place sometimes, so contributors/maintainers are always welcome, regardless of your skill level or age.
 
 ## How to add a company
 
@@ -16,7 +14,7 @@ To add your entry, follow [the steps for forking the repo and creating a pull-re
 
 ```
 - name: Entry Name
-  category: startup | company | investor | event
+  category: company | agency | investor | event
   url: www.name.com
   description: Some nice description about the entry. Preferrably between 125-175 characters. Like a long tweet.
 ```
@@ -50,11 +48,11 @@ As for the image/logo, fire up Photoshop and [download this template PSD](http:/
 
 Lastly, it would be great if you linked to the site somewhere on your own website (ex. a link in your site's footer linking 'Made in Montreal' to this site).
 
-If this all sounds too technical, feel free to [create an issue][create an issue] with the same information (logo, name, description, etc.) and one of the maintainers will add it in when they get time.
+**If this all sounds too technical**, feel free to [create an issue][create an issue] with the same information (logo, name, description, etc.) and one of the maintainers will add it in when they get time.
 
 ## Editing existing entries
 
-Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you. Note that changes can be made by anyone, but preference will be given for employees/volunteers of the company/startup/event/investor.
+Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you. Note that changes can be made by anyone, but preference will be given for employees/volunteers of the company/agency/event/investor.
 
 ## Contributing
 
@@ -72,17 +70,6 @@ If you want to do more than just edit the `_data/entries.yml` file, you'll also 
 When completed, you'll be able to run the various Grunt commands provided from the command line (look in the GruntFile.js for the additional commands).
 
 **Unfamiliar with `npm`? Don't have node installed?** That's okay. npm stands for [node packaged modules](http://npmjs.org/) and is a way to manage development dependencies through node.js. [Download and install node.js](http://nodejs.org/download/) before proceeding.
-
-## FAQs
-
-#### What's the difference between a startup and a company?
-Not sure. For the purposes of this, just pick one. If the business is in the +150 employee range, then it's probably a company.
-
-#### Can we add more categories?
-If you think there's a good category that isn't up there (like maybe 'Resources' or 'Agencies'), let me know. [Create an issue][create an issue] or [message me on twitter][luke twitter] and we can talk about it.
-
-#### Can I help you maintain the project?
-Yep! [Message me on twitter][luke twitter] and I'll be happy to give you some access to the repo to help out.
 
 ## Contributors
 
