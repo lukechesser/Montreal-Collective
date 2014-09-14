@@ -1,6 +1,6 @@
 name: Montreal Collective
-description: The best of Montreal's startups, companies, investors, and events
-keywords: montreal, startups, companies, events, tech, investors, meetups, quebec, canada, technology
+short_description: Montreal companies, agencies, startups, investors, and events.
+description: A list of the best Montreal startups, companies, agencies, investors, and events.
 
 exclude: [_less, _img, _css, _js, _assets, _icons, node_modules, s3_website.yml, package.json, README.md, GruntFile.js, Gemfile, Gemfile.lock]
 safe: false
