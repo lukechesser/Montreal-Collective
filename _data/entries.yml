@@ -1,5 +1,5 @@
 - name: Crew
-  category: startup
+  category: company
   url: pickcrew.com
   description: A premium marketplace of the best design and development freelancers in the world.
   twitter: crewlabs
@@ -12,7 +12,7 @@
   twitter: CloudOps_
 
 - name: Breather
-  category: startup
+  category: company
   url: breather.com
   description: Breather gives users access to private, beautiful spaces for working, meetings, and relaxing using only your iPhone.
   twitter: breather
@@ -45,7 +45,7 @@
   twitter: vernalkick
 
 - name: CakeMail
-  category: startup
+  category: company
   url: cakemail.com
   description: CakeMail makes email marketing simple with tools to create and send emails quickly and easily.
   twitter: cakemail
@@ -57,14 +57,14 @@
   description: Bringing members together to present and get feedback on their work, hear from experienced professionals, and meet the local creative community.
 
 - name: Planbox
-  category: startup
+  category: company
   url: planbox.com
   description: Planbox is an agile management tool that makes it easy to map out entire projects with a single tool.
   twitter: planbox
   facebook: planbox
 
 - name: Transit App
-  category: startup
+  category: company
   url: thetransitapp.com
   description: Transit is the simple and beautiful way to get around. Available on iOS and Android.
   twitter: thetransitapp
@@ -105,7 +105,7 @@
   twitter: founderfuel
 
 - name: Context.IO
-  category: startup
+  category: company
   url: context.io
   description: Context.IO takes care of syncing email data for apps, making it easy to integrate email data into any application.
   twitter: contextio
@@ -118,7 +118,7 @@
   facebook: startupweekend
 
 - name: Frank & Oak
-  category: startup
+  category: company
   url: frankandoak.com
   description: Frank & Oak is an online retailer that designs, manufactures, and curates a monthly collection of fine clothing and accessories.
   twitter: frankandoak
@@ -144,26 +144,26 @@
   twitter: cocoaheadsmtl
 
 - name: FreshMint
-  category: startup
+  category: company
   url: freshmint.com
   description: FreshMint cooks up delicious wholesome meals and delivers them in record times for unbeatable value.
   twitter: getfreshmint
   
 - name: Busbud
-  category: startup
+  category: company
   url: busbud.com
   description: Busbud makes bus travel easy. By connecting travelers to bus operators, Busbud makes it a breeze to search, compare and book city-to-city bus tickets, all around the world.
   twitter: busbud
   facebook: Busbud  
 
 - name: 1dev.ca
-  category: startup
+  category: company
   url: 1dev.ca
   description: 1dev is a company created to build instant connections between clients and freelancers in the technology industry, while saving time.
   twitter: 1devca
   
 - name: Provender
-  category: startup
+  category: company
   url: provender.com
   description: Provender is an online marketplace connecting chefs and grocers with local farms to facilitate a direct supply of goods.
   twitter: provender
