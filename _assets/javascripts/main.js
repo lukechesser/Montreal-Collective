@@ -35,8 +35,8 @@
         $mobileTab: $('.js-mobile-tab'),
         $entryList: $('.js-entry-list'),
         $all: $('.js-entry'),
-        $startups: null,
         $companies: null,
+        $agencies: null,
         $investors: null,
         $events: null,
     };
@@ -110,8 +110,8 @@
     $(function () {
 
         // cache references to each category
-        cache.$startups = c.$all.filter('[data-category=startup]');
         cache.$companies = c.$all.filter('[data-category=company]');
+        cache.$agencies = c.$all.filter('[data-category=agency]');
         cache.$investors = c.$all.filter('[data-category=investor]');
         cache.$events = c.$all.filter('[data-category=event]');
 

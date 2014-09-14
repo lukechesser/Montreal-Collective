@@ -143,6 +143,12 @@
   description: iOS and Mac developers, assemble! Hosted at McKibbin's on the second Tuesday of every month, showcasing drinks, food and talks from local Apple developers and designers.
   twitter: cocoaheadsmtl
 
+- name: underlabs
+  category: agency
+  url: underlabs.ca
+  description: A software engineering mobile development workshop catererd to Montreal's entrepreneurs, startups and enterprises.
+  twitter: underlabs
+
 - name: FreshMint
   category: company
   url: freshmint.com

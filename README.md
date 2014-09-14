@@ -89,8 +89,9 @@ Yep! [Message me on twitter][luke twitter] and I'll be happy to give you some ac
 - Luke Chesser ([Twitter](https://twitter.com/lukechesser), [Blog](http://imluke.me/), [Dribbble](http://dribbble.com/lukechesser), [GitHub](https://github.com/lukechesser))
 - Sam Vermette ([Twitter](https://twitter.com/samvermette), [GitHub](https://github.com/samvermette))
 - Mauricio Idarraga ([GitHub](https://github.com/midarraga))
-- Will Steves ([Github](https://github.com/swill))
-- 1devca ([Github](https://github.com/1devca))
+- Will Steves ([GitHub](https://github.com/swill))
+- Yozef ([GitHub](https://github.com/yozef))
+- 1devca ([GitHub](https://github.com/1devca))
 - Frederic Thouin ([GitHub](https://github.com/fredbusbud))
 
 ## License
