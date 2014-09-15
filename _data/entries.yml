@@ -136,7 +136,7 @@
   url: creativemornings.com/cities/mtl
   description: An event put together by Plank's Steve Bissonnette, CM meets at 8am on the last Friday of every month, showcasing unique speakers from various Montreal creative hotspots.
   twitter: montreal_cm
-  
+
 - name: CocoaHeads
   category: event
   url: cocoaheadsmtl.com
@@ -154,30 +154,37 @@
   url: freshmint.com
   description: FreshMint cooks up delicious wholesome meals and delivers them in record times for unbeatable value.
   twitter: getfreshmint
-  
+
 - name: Busbud
   category: company
   url: busbud.com
   description: Busbud makes bus travel easy. By connecting travelers to bus operators, Busbud makes it a breeze to search, compare and book city-to-city bus tickets, all around the world.
   twitter: busbud
-  facebook: Busbud  
+  facebook: Busbud
 
 - name: 1dev.ca
   category: company
   url: 1dev.ca
   description: 1dev is a company created to build instant connections between clients and freelancers in the technology industry, while saving time.
   twitter: 1devca
-  
+
 - name: Provender
   category: company
   url: provender.com
   description: Provender is an online marketplace connecting chefs and grocers with local farms to facilitate a direct supply of goods.
   twitter: provender
   facebook: getprovender
-  
+
 - name: LightSpeed
   category: company
   url: lightspeedretail.com
   description: Lightspeed is a Cloud Point of Sale system to manage inventory, engage customers, and enable selling anywhere.
   twitter: LightSpeedPOS
   facebook: LightSpeedPOS
+
+- name: Flightfox
+  category: company
+  url: flightfox.com
+  description: A marketplace of the world's best flight and travel experts, at your service. They combine deep industry experience with complex search algorithms to help you travel farther, wider, better and cheaper.
+  twitter: flightfox
+  facebook: flightfox
