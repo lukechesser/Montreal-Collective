@@ -80,6 +80,7 @@ When completed, you'll be able to run the various Grunt commands provided from t
 - Yozef ([GitHub](https://github.com/yozef))
 - 1devca ([GitHub](https://github.com/1devca))
 - Frederic Thouin ([GitHub](https://github.com/fredbusbud))
+- Oscar Balladares M. ([GitHub](https://github.com/oscarballadares))
 
 ## License
 
