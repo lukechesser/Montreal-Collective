@@ -179,7 +179,7 @@
 - name: LightSpeed
   category: company
   url: lightspeedretail.com
-  description: Lightspeed is a Cloud Point of Sale system to manage inventory, engage customers, and enable selling anywhere.
+  description: "Lightspeed is a Cloud Point of Sale system to manage inventory, engage customers, and enable selling anywhere."
   twitter: LightSpeedPOS
   facebook: LightSpeedPOS
 
@@ -190,9 +190,10 @@
   twitter: flightfox
   facebook: flightfox
 
-  - name: Horse & Cart
+- name: "Horse & Cart"
   category: agency
   url: horseandcartagency.com
-  description: Writers, designers strategists & technologists - creatives one and all - we live by a simple commitment to bring our very best and always Keep Marketing Fun.
+  description: "Writers, designers strategists & technologists - creatives one and all - we live by a simple commitment to bring our very best and always Keep Marketing Fun."
   twitter: pullmycart
   facebook: horseandcartagency
+  
