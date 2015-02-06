@@ -209,3 +209,10 @@
   description: "A Janbr pass gives you access to the best fitness studios in Montreal"
   twitter: joinjanbr
   facebook: joinjanbr
+
+- name: Potloc
+  category: company
+  url: potloc.com
+  description: "Thanks to Potloc, choose the next stores you want to have in your neighborhood!"
+  twitter: potloc_mtl
+  facebook: potloc
