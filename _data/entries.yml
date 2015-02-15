@@ -17,13 +17,6 @@
   description: CloudOps offers high performance private and public cloud computing solutions with reliable and cost-effective operations.
   twitter: CloudOps_
 
-- name: Breather
-  category: company
-  url: breather.com
-  description: Breather gives users access to private, beautiful spaces for working, meetings, and relaxing using only your iPhone.
-  twitter: breather
-  facebook: breatherinc
-
 - name: Shopify
   category: company
   url: shopify.ca
@@ -75,6 +68,13 @@
   description: Transit is the simple and beautiful way to get around. Available on iOS and Android.
   twitter: thetransitapp
   facebook: thetransitapp
+
+- name: Breather
+  category: company
+  url: breather.com
+  description: Breather gives users access to private, beautiful spaces for working, meetings, and relaxing using only your iPhone.
+  twitter: breather
+  facebook: breatherinc
 
 - name: BDC
   category: investor
@@ -206,7 +206,7 @@
 - name: Janbr
   category: company
   url: janbr.com
-  description: "A Janbr pass gives you access to the best fitness studios in Montreal"
+  description: "A Janbr pass gives you access to the best fitness studios in Montreal."
   twitter: joinjanbr
   facebook: joinjanbr
 
@@ -216,3 +216,10 @@
   description: Navut website provides a set of online tools that allows people to find a neighborhood that's best for them. Using Navut helps people to easily, quickly, and confidently establish themselves in their new area.
   twitter: realnavut
   facebook: realnavut
+
+- name: Potloc
+  category: company
+  url: potloc.com
+  description: "Thanks to Potloc, choose the next stores you want to have in your neighborhood!"
+  twitter: potloc_mtl
+  facebook: potloc
