@@ -202,7 +202,7 @@
   description: "Writers, designers strategists & technologists - creatives one and all - we live by a simple commitment to bring our very best and always Keep Marketing Fun."
   twitter: pullmycart
   facebook: horseandcartagency
-  
+
 - name: Janbr
   category: company
   url: janbr.com
@@ -223,3 +223,8 @@
   description: "Thanks to Potloc, choose the next stores you want to have in your neighborhood!"
   twitter: potloc_mtl
   facebook: potloc
+
+- name: SociableLabs
+  category: company
+  url: sociablelabs.com
+  description: "Our mission is to help consumers discover great products or brands via friend referral (digital word of mouth).  We are experts in the intersection of online customer acquisition and viral/social marketing, having acquired over 50M users across the globe."
