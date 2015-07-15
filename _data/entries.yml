@@ -223,3 +223,10 @@
   description: "Thanks to Potloc, choose the next stores you want to have in your neighborhood!"
   twitter: potloc_mtl
   facebook: potloc
+
+- name: 2PS
+  category: company
+  url: 2ps.com
+  description: "2PS assemble teams of experienced business professionals offering a wide variety of consultancy assistance to businesses."
+  twitter: presentprofit
+  facebook: presentprofit
