@@ -30,13 +30,6 @@
   description: Real Ventures is Canada’s largest and most active seed venture fund investing in web, mobile, Saas and gaming. They work with inspiring entrepreneurs who exhibit unique insight and appreciation of their target market and industry.
   twitter: realventures
 
-- name: Ubisoft
-  category: company
-  url: ubisoft.com
-  description: Ubisoft is a multinational video game developer and publisher. It is the world's third largest independent game publisher, with development studios around the world and in Montreal.
-  twitter: ubisoft
-  facebook: ubisoftmontreal
-
 - name: Dribbble Meetup
   category: event
   url: mtldribbblemeetup.com
