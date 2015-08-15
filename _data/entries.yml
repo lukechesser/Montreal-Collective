@@ -1,8 +1,8 @@
 - name: Crew
   category: company
-  url: pickcrew.com
+  url: crew.co
   description: A premium marketplace of the best design and development freelancers in the world.
-  twitter: crewlabs
+  twitter: pickcrew
   facebook: crewlabs
 
 - name: Unsplash

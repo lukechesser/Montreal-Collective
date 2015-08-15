@@ -1576,8 +1576,7 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
   color: #cf5924;
   text-decoration: underline;
 }
@@ -1786,13 +1785,14 @@ h6 {
 
 .tabs > li > a:hover {
   color: #222222;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .tabs > .active > a,
 .tabs > .active > a:hover {
   color: #222222;
   cursor: default;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
