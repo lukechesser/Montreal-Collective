@@ -189,6 +189,14 @@
   twitter: flightfox
   facebook: flightfox
 
+- name: "Guarana"
+  category: agency
+  url: guarana-technologies.com
+  description: "Guarana Technologies specializes in iPhone and Android app development. What makes us unique among mobile app development companies? Our ability to handle a project from your idea to an successful mobile app! We help you to draft it, make it smart, make it sexy, and launch it."
+  twitter: GuaranaTech
+  facebook: guaranamobileapps
+  
+
 - name: "Horse & Cart"
   category: agency
   url: horseandcartagency.com
