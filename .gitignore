@@ -1,3 +1,5 @@
-**/.*
-node_modules/
-!.gitignore
+node_modules
+.env
+.jshintrc
+_site/**/*
+_assets/**/*

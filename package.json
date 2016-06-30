@@ -1,6 +1,6 @@
 {
   "name": "montreal-collective",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "website and resources for montrealcollective.com",
   "main": "index.js",
   "dependencies": {
@@ -25,5 +25,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Luke Chesser <luke.chesser@me.com> (http://imluke.me/)",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "4.2.4",
+    "npm": "3.5.3"
+  }
 }
