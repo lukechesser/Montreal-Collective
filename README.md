@@ -1,6 +1,6 @@
 # Montreal Collective
 
-[ ![Codeship Status for lukechesser/Montreal-Collective](https://codeship.io/projects/ba695d90-99b3-0131-0bc4-32f23639df46/status?branch=master)](https://codeship.io/projects/17363)
+[ ![Codeship Status for lukechesser/Montreal-Collective](https://codeship.com/projects/c20e7760-213c-0134-9c27-0a126e04a02e/status?branch=master)](https://codeship.com/projects/160916)
 
 **A collection of Montreal's best tech companies, startups, agencies, investors, and events.**
 
