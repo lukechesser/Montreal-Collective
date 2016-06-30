@@ -195,6 +195,9 @@ module.exports = function(grunt) {
       },
       deployAutomated: {
         command: 's3_website push --headless'
+      },
+      clearBuild: {
+        command: 'rm -rf _assets && rm -rf _site'
       }
     },
 
@@ -245,7 +248,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy-automated', ['shell:deployAutomated']);
 
   // task aliases/sugar
-  grunt.registerTask('compile', ['compile-js', 'compile-css', 'compile-images', 'compile-site']);
+  grunt.registerTask('compile', ['shell:clearBuild', 'compile-js', 'compile-css', 'compile-images', 'compile-site']);
   grunt.registerTask('default', ['compile']);
 
   // watch tasks
