@@ -195,7 +195,7 @@
   description: "Guarana Technologies specializes in iPhone and Android app development. What makes us unique among mobile app development companies? Our ability to handle a project from your idea to an successful mobile app! We help you to draft it, make it smart, make it sexy, and launch it."
   twitter: GuaranaTech
   facebook: guaranamobileapps
-  
+
 
 - name: "Horse & Cart"
   category: agency
@@ -252,3 +252,10 @@
   description: iStockbox is the storage and parking marketplace that connect people who have stuff to store or cars to park to neighbors with extra space to rent out in their parking, garage
   twitter: istockbox
   facebook: istockbox
+
+- name: Leeroy
+  category: agency
+  url: leeroy.ca
+  description: LEEROY is a creative agency located in Montreal. LEEROY provides web, communication and marketing services.
+  twitter: agenceleeroy
+  facebook: agenceleeroy
