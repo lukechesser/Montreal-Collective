@@ -175,12 +175,12 @@
   twitter: provender
   facebook: getprovender
 
-- name: LightSpeed
+- name: LightSpeed POS
   category: company
-  url: lightspeedretail.com
-  description: "Lightspeed is a Cloud Point of Sale system to manage inventory, engage customers, and enable selling anywhere."
-  twitter: LightSpeedPOS
-  facebook: LightSpeedPOS
+  url: lightspeedhq.com
+  description: "Lightspeed offers POS systems, ecommerce and omnichannel solutions for retailers and restaurateurs. They are reinventing the customer experience while helping businesses grow."
+  twitter: lightspeedhq
+  facebook: LightspeedHQ
 
 - name: Flightfox
   category: company
@@ -195,7 +195,7 @@
   description: "Guarana Technologies specializes in iPhone and Android app development. What makes us unique among mobile app development companies? Our ability to handle a project from your idea to an successful mobile app! We help you to draft it, make it smart, make it sexy, and launch it."
   twitter: GuaranaTech
   facebook: guaranamobileapps
-  
+
 
 - name: "Horse & Cart"
   category: agency
