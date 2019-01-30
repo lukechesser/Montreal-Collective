@@ -1,15 +1,9 @@
-- name: Crew
-  category: company
-  url: crew.co
-  description: A premium marketplace of the best design and development freelancers in the world.
-  twitter: pickcrew
-  facebook: crewlabs
-
 - name: Unsplash
   category: company
   url: unsplash.com
-  description: Free (do whatever you want) high-resolution photos.
+  description: "The internet's open library of freely usable visuals."
   twitter: unsplash
+  facebook: unsplash
 
 - name: CloudOps
   category: company
